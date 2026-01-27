@@ -23,6 +23,12 @@ function Calculator () {
         let display_text = document.getElementById('display_text');
         // this.a = 
         // display_text.innerText += this.a;
+        
+        // for (const property in this.buttons) {
+        //     display_text.innerText += property
+        // }
+        
+        
     }
     this.add = function () {
         return this.a + this.b;
@@ -42,4 +48,4 @@ function Calculator () {
 
 let calculator = new Calculator(); // new object created
 
-console.log(calculator.add());
+console.log(calculator.read());
