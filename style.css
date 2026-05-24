@@ -24,8 +24,13 @@ body {
 .num-pad {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
+    padding: 15px;
 }
 
 div {
     background: white;
+    padding: 10px;
+    border-radius: 100%;
+    text-align: center;
+    margin: .6em;
 }
