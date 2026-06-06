@@ -1,3 +1,7 @@
+body {
+    background: lightgray;
+}
+
 .calc-bg {
     background: black;
 }
@@ -5,5 +9,22 @@
 .calc-body {
     width: 50%;
     border: none;
-    border-radius: 15px;
+    border-radius: 18px;
+    margin: 0 auto;
+    padding: 50px 15px 25px 15px;
+}
+
+.num-display {
+    width: 90%;
+    margin: 0 auto;
+    background: white;
+    height: 50px;
+}
+
+.num-pad {
+    /* display: grid; */
+}
+
+div {
+    background: white;
 }
