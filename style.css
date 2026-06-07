@@ -1,0 +1,9 @@
+.calc-bg {
+    background: black;
+}
+
+.calc-body {
+    width: 50%;
+    border: none;
+    border-radius: 15px;
+}
