@@ -3,7 +3,7 @@ body {
 }
 
 .calc-bg {
-    background: black;
+    background: rgb(10, 10, 10);
 }
 
 .calc-body {
@@ -12,6 +12,7 @@ body {
     border-radius: 18px;
     margin: 0 auto;
     padding: 50px 15px 25px 15px;
+    box-shadow: 5px 5px rgb(46, 46, 46);
 }
 
 .num-display {
@@ -24,7 +25,7 @@ body {
 .num-pad {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    padding: 15px;
+    padding: 5px;
 }
 
 div {
@@ -32,5 +33,12 @@ div {
     padding: 10px;
     border-radius: 100%;
     text-align: center;
-    margin: .6em;
+    margin: 5%;
+}
+
+.num-display p {
+    text-align: right;
+    padding-right: 5px;
+    margin: 0;
+    font-size: 50px;
 }
