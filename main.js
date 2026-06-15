@@ -4,17 +4,21 @@ class Calculator {
     constructor () {
 
     }
+    read() {
+        // this.a = +prompt('a?', 0);
+        // this.b = +prompt('b?', 0);
+    }
     add() {
-        console.log("Adding numbers")
+        return this.a + this.b;
     }
     subtract() {
-        console.log("Subtracting numbers")
+        return this.a - this.b;
     }
     multiply() {
-        console.log("Multiplying numbers")
+        return this.a * this.b;
     }
     divide() {
-        console.log("Dividing numbers")
+        return this.a / this.b;
     }
 }
 
