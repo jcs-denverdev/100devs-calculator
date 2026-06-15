@@ -19,18 +19,19 @@ body {
     width: 90%;
     margin: 0 auto;
     background: white;
-    height: 50px;
+    height: 70px;
 }
 
 .num-pad {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     padding: 5px;
+    margin-top: 2em;
 }
 
 div {
     background: white;
-    padding: 10px;
+    /* padding: 10px; */
     border-radius: 100%;
     text-align: center;
     margin: 5%;
@@ -40,5 +41,9 @@ div {
     text-align: right;
     padding-right: 5px;
     margin: 0;
-    font-size: 50px;
+    font-size: 70px;
+}
+
+h3 {
+    font-size: 25px;
 }
