@@ -40,7 +40,9 @@ function addNineToDisplay () {
     num_display.innerText += 9;
 }
 function addDecimalToDisplay () {
-    num_display.innerText += ".";
+    if (!num_display.innerText.includes(".")) {
+        num_display.innerText += ".";
+    }
 }
 
 // operator click functions
