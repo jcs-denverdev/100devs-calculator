@@ -6,6 +6,7 @@ let num_display = document.getElementById('display-text'); // variable for where
 // does each button need a click event?
     // each "button" is a div, with the class of "button" and an id to represent whatever number or symbol it is
 
+// number click functions
 function addZeroToDisplay () {
     if (num_display.innerText.length > 0) {
         num_display.innerText += 0;
@@ -38,7 +39,28 @@ function addEightToDisplay () {
 function addNineToDisplay () {
     num_display.innerText += 9;
 }
+function addDecimalToDisplay () {
+    num_display.innerText += ".";
+}
 
+// operator click functions
+function divideNums () {
+
+}
+function multiplyNums () {
+    
+}
+function addNums () {
+    
+}
+function subtractNums () {
+    
+}
+function equateNums () {
+
+}
+
+// number buttons and event listeners
 let zero = document.getElementById('zero');
 zero.addEventListener('click', addZeroToDisplay);
 
@@ -68,3 +90,22 @@ eight.addEventListener('click', addEightToDisplay);
 
 let nine = document.getElementById('nine');
 nine.addEventListener('click', addNineToDisplay);
+
+let decimal = document.getElementById('decimal');
+decimal.addEventListener('click', addDecimalToDisplay);
+
+// Operator buttons and event listeners
+let divide = document.getElementById('divide');
+divide.addEventListener('click', divideNums);
+
+let multiply = document.getElementById('multiply');
+multiply.addEventListener('click', multiplyNums);
+
+let add = document.getElementById('add');
+add.addEventListener('click', addNums);
+
+let subtract = document.getElementById('subtract');
+subtract.addEventListener('click', subtractNums);
+
+let equate = document.getElementById('equals');
+equate.addEventListener('click', equateNums);
