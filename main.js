@@ -12,3 +12,17 @@ seven.addEventListener('click', addSevenToDisplay);
 function addSevenToDisplay () {
     num_display.innerText += 7;
 }
+
+let eight = document.getElementById('eight');
+eight.addEventListener('click', addEightToDisplay);
+
+function addEightToDisplay () {
+    num_display.innerText += 8;
+}
+
+let nine = document.getElementById('nine');
+nine.addEventListener('click', addNineToDisplay);
+
+function addNineToDisplay () {
+    num_display.innerText += 9;
+}
