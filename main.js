@@ -25,9 +25,8 @@ function Calculator () {
     for (const key in this.buttons) {
         this.buttons[key].addEventListener('click', () => {
             this.read(key);
-            if (key == "+") {
-                this.add();
-
+            if (key == "=") {
+                this.equals();
             }
         });
     }
@@ -38,7 +37,7 @@ function Calculator () {
         this.display.innerText += value;
     }
     this.add = function () {
-        this.display.innerText = ""
+        
     }
     this.subtract = function () {
         
@@ -48,6 +47,10 @@ function Calculator () {
     }
     this.divide = function () {
         
+    }
+    this.equals = function () {
+        let expression = this.display.innerText.slice(0, -1); // remove the "=" 
+        this.display.innerText = eval(expression);
     }
 }
 
