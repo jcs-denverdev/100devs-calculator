@@ -6,6 +6,11 @@ let num_display = document.getElementById('display-text'); // variable for where
 // does each button need a click event?
     // each "button" is a div, with the class of "button" and an id to represent whatever number or symbol it is
 
+// we need to be able to hold the first number in memory
+// then after an operator is clicked, we need to hold a second number in memory
+let n1 = 0;
+let n2 = 0;
+
 // number click functions
 function addZeroToDisplay () {
     if (num_display.innerText.length > 0) {
@@ -47,15 +52,19 @@ function addDecimalToDisplay () {
 
 // operator click functions
 function divideNums () {
+    n1 = num_display.innerText;
     num_display.innerText = ""
 }
 function multiplyNums () {
+    n1 = num_display.innerText;
     num_display.innerText = ""
 }
 function addNums () {
+    n1 = num_display.innerText;
     num_display.innerText = ""
 }
 function subtractNums () {
+    n1 = num_display.innerText;
     num_display.innerText = ""
 }
 function equateNums (num1, num2, operator) {
