@@ -1,28 +1,25 @@
 
 // JS OOP BEST PRACTICES
-
-class Calculator {
-    constructor (name) {
-        this.name = name;
-    }
-    read() {
+function Calculator () {
+    this.read = function () {
         // this.a = +prompt('a?', 0);
         // this.b = +prompt('b?', 0);
 
     }
-    add() {
+    this.add = function () {
         // return this.a + this.b;
 
     }
-    subtract() {
+    this.subtract = function () {
         // return this.a - this.b;
     }
-    multiply() {
+    this.multiply = function () {
         // return this.a * this.b;
     }
-    divide() {
+    this.divide = function () {
         // return this.a / this.b;
     }
 }
+
 
 let myCalculator = new Calculator("myCalculator"); // new object created
