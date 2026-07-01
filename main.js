@@ -47,19 +47,34 @@ function addDecimalToDisplay () {
 
 // operator click functions
 function divideNums () {
-
+    num_display.innerText = ""
 }
 function multiplyNums () {
-    
+    num_display.innerText = ""
 }
 function addNums () {
-    
+    num_display.innerText = ""
 }
 function subtractNums () {
-    
+    num_display.innerText = ""
 }
-function equateNums () {
-
+function equateNums (num1, num2, operator) {
+    // take whatever is in num_display and what operator was last clicked and return
+    // maybe a switch statement?
+    switch (operator) {
+        case divide:
+            return num1 / num2;
+            break;
+        case multiply:
+            return num1 * num2;
+            break;
+        case add:
+            return num1 + num2;
+            break;
+        case subtract:
+            return num1 - num2;
+            break;
+    }
 }
 
 // number buttons and event listeners
