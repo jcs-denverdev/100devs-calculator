@@ -53,19 +53,27 @@ function addDecimalToDisplay () {
 // operator click functions
 function divideNums () {
     n1 = num_display.innerText;
-    num_display.innerText = ""
+    if (num_display.innerText.length > 0) {
+        num_display.innerText += "/";
+    }
 }
 function multiplyNums () {
     n1 = num_display.innerText;
-    num_display.innerText = ""
+    if (num_display.innerText.length > 0) {
+        num_display.innerText += "x";
+    }
 }
 function addNums () {
     n1 = num_display.innerText;
-    num_display.innerText = ""
+    if (num_display.innerText.length > 0) {
+        num_display.innerText += "+";
+    }
 }
 function subtractNums () {
     n1 = num_display.innerText;
-    num_display.innerText = ""
+    if (num_display.innerText.length > 0) {
+        num_display.innerText += "-";
+    }
 }
 function equateNums (num1, num2, operator) {
     // take whatever is in num_display and what operator was last clicked and return
