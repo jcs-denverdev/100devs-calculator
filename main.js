@@ -7,19 +7,19 @@ function Calculator () {
 
     }
     this.add = function () {
-        // return this.a + this.b;
+        return this.a + this.b;
 
     }
     this.subtract = function () {
-        // return this.a - this.b;
+        return this.a - this.b;
     }
     this.multiply = function () {
-        // return this.a * this.b;
+        return this.a * this.b;
     }
     this.divide = function () {
-        // return this.a / this.b;
+        return this.a / this.b;
     }
 }
 
 
-let myCalculator = new Calculator("myCalculator"); // new object created
+let calculator = new Calculator(); // new object created
