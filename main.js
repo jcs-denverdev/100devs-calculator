@@ -1,7 +1,7 @@
 // procedural js branch
 
-let num_display = document.getElementById('display-text'); // variable for where you see the numbers as they are clicked
-// num_display.innerText = 5;
+let display_text = document.getElementById('display_text'); // variable for where you see the numbers as they are clicked
+// display_text.innerText = 5;
 
 // does each button need a click event?
     // each "button" is a div, with the class of "button" and an id to represent whatever number or symbol it is
@@ -13,74 +13,74 @@ let n2 = 0;
 
 // number click functions
 function addZeroToDisplay () {
-    if (num_display.innerText.length > 0) {
-        num_display.innerText += 0;
+    if (display_text.innerText.length > 0) {
+        display_text.innerText += 0;
     }
 }
 function addOneToDisplay () {
-    num_display.innerText += 1;
+    display_text.innerText += 1;
 }
 function addTwoToDisplay () {
-    num_display.innerText += 2;
+    display_text.innerText += 2;
 }
 function addThreeToDisplay () {
-    num_display.innerText += 3;
+    display_text.innerText += 3;
 }
 function addFourToDisplay () {
-    num_display.innerText += 4;
+    display_text.innerText += 4;
 }
 function addFiveToDisplay () {
-    num_display.innerText += 5;
+    display_text.innerText += 5;
 }
 function addSixToDisplay () {
-    num_display.innerText += 6;
+    display_text.innerText += 6;
 }
 function addSevenToDisplay () {
-    num_display.innerText += 7;
+    display_text.innerText += 7;
 }
 function addEightToDisplay () {
-    num_display.innerText += 8;
+    display_text.innerText += 8;
 }
 function addNineToDisplay () {
-    num_display.innerText += 9;
+    display_text.innerText += 9;
 }
 function addDecimalToDisplay () {
-    if (!num_display.innerText.includes(".")) {
-        num_display.innerText += ".";
+    if (!display_text.innerText.includes(".")) {
+        display_text.innerText += ".";
     }
 }
 
 // operator click functions
 function divideNums () {
-    n1 = num_display.innerText;
-    if (num_display.innerText.length > 0) {
-        num_display.innerText += "/";
+    n1 = display_text.innerText;
+    if (display_text.innerText.length > 0) {
+        display_text.innerText += "/";
     }
 }
 function multiplyNums () {
-    n1 = num_display.innerText;
-    if (num_display.innerText.length > 0) {
-        num_display.innerText += "x";
+    n1 = display_text.innerText;
+    if (display_text.innerText.length > 0) {
+        display_text.innerText += "x";
     }
 }
 function addNums () {
-    n1 = num_display.innerText;
-    if (num_display.innerText.length > 0) {
-        num_display.innerText += "+";
+    n1 = display_text.innerText;
+    if (display_text.innerText.length > 0) {
+        display_text.innerText += "+";
     }
 }
 function subtractNums () {
-    n1 = num_display.innerText;
-    if (num_display.innerText.length > 0) {
-        num_display.innerText += "-";
+    n1 = display_text.innerText;
+    if (display_text.innerText.length > 0) {
+        display_text.innerText += "-";
     }
 }
-function equateNums (num1, num2, operator) {
-    // take whatever is in num_display and what operator was last clicked and return
+function equateNums () {
+    // take whatever is in display_text and what operator was last clicked and return
     // maybe a switch statement?
     switch (operator) {
         case divide:
-            return num1 / num2;
+            display_text.innerText = num1 / num2;
             break;
         case multiply:
             return num1 * num2;
