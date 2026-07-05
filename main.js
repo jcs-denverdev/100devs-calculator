@@ -13,6 +13,7 @@ function Calculator () {
         8: document.getElementById('eight'),
         9: document.getElementById('nine'),
         0: document.getElementById('zero'),
+        ".": document.getElementById('decimal'),
         "+": document.getElementById('add'),
         "-": document.getElementById('subtract'),
         "x": document.getElementById('multiply'),
