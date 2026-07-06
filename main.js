@@ -24,16 +24,10 @@ function Calculator () {
             this.read(key);
         });
     }
+
     this.read = function (value) {
-        // let display_text = document.getElementById('display_text');
-        // this.a = 
-        // display_text.innerText += this.a;
-        
-        // for (const property in this.buttons) {
-        //     display_text.innerText += property
-        // }
-        console.log(value)
-        
+        // console.log(value)
+        document.getElementById('display_text').innerText += value;
     }
     this.add = function () {
 
