@@ -23,8 +23,8 @@ function Calculator () {
     for (const key in this.buttons) {
         this.buttons[key].addEventListener('click', () => {
             this.read(key);
-            if (this.buttons[key] == "+") {
-                this.add(key);
+            if (key == "+") {
+                console.log(`You clicked the ${key}`)
             }
         });
     }
@@ -51,4 +51,4 @@ function Calculator () {
 
 let calculator = new Calculator(); // new object created
 
-// console.log(calculator.read());
+
