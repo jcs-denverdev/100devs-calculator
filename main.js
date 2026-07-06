@@ -13,6 +13,7 @@ function Calculator () {
         8: document.getElementById('eight'),
         9: document.getElementById('nine'),
         0: document.getElementById('zero'),
+        ".": document.getElementById('decimal'),
         "+": document.getElementById('add'),
         "-": document.getElementById('subtract'),
         "x": document.getElementById('multiply'),
@@ -22,26 +23,28 @@ function Calculator () {
     for (const key in this.buttons) {
         this.buttons[key].addEventListener('click', () => {
             this.read(key);
+            if (this.buttons[key] == "+") {
+                this.add(key);
+            }
         });
     }
 
     this.read = function (value) {
         // console.log(value)
+        /* take the button key (value), and append to the display */
         document.getElementById('display_text').innerText += value;
     }
-    this.add = function () {
-
-        return this.a + this.b;
+    this.add = function (val1, val2) {
+        document.getElementById('display_text').innerText += (val1 + val2)
     }
     this.subtract = function () {
-        return this.a - this.b;
+
     }
     this.multiply = function () {
-        return this.a * this.b;
+
     }
     this.divide = function () {
-        if (this.b == 0) throw new Error('div by 0 not allowed');
-        return this.a / this.b;
+
     }
 }
 
