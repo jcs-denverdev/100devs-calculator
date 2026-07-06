@@ -2,7 +2,7 @@
 // JS OOP BEST PRACTICES
 
 function Calculator () {
-    this.buttons = {
+    this.buttons = { /* stores the actual button elements rather than the return value of event listeners */
         1: document.getElementById('one'),
         2: document.getElementById('two'),
         3: document.getElementById('three'),
@@ -19,18 +19,24 @@ function Calculator () {
         "/": document.getElementById('divide'),
         "=": document.getElementById('equals')
     }
-    this.read = function () {
-        let display_text = document.getElementById('display_text');
+    for (const key in this.buttons) {
+        this.buttons[key].addEventListener('click', () => {
+            this.read(key);
+        });
+    }
+    this.read = function (value) {
+        // let display_text = document.getElementById('display_text');
         // this.a = 
         // display_text.innerText += this.a;
         
         // for (const property in this.buttons) {
         //     display_text.innerText += property
         // }
-        
+        console.log(value)
         
     }
     this.add = function () {
+
         return this.a + this.b;
     }
     this.subtract = function () {
@@ -48,4 +54,4 @@ function Calculator () {
 
 let calculator = new Calculator(); // new object created
 
-console.log(calculator.read());
+// console.log(calculator.read());
