@@ -25,10 +25,10 @@ function Calculator () {
     for (const key in this.buttons) {
         this.buttons[key].addEventListener('click', () => {
             this.read(key);
-            // if (key == "+") {
-            //     console.log(`You clicked the ${key}`)
+            if (key == "+") {
+                this.add();
 
-            // }
+            }
         });
     }
 
@@ -38,8 +38,7 @@ function Calculator () {
         this.display.innerText += value;
     }
     this.add = function () {
-<<<<<<< HEAD
-
+        this.display.innerText = ""
     }
     this.subtract = function () {
         
@@ -49,18 +48,6 @@ function Calculator () {
     }
     this.divide = function () {
         
-=======
-        
-    }
-    this.subtract = function () {
-
-    }
-    this.multiply = function () {
-
-    }
-    this.divide = function () {
-
->>>>>>> 83359391f02a9a720d20388a934b7994b6ee3ded
     }
 }
 
