@@ -25,10 +25,10 @@ function Calculator () {
     for (const key in this.buttons) {
         this.buttons[key].addEventListener('click', () => {
             this.read(key);
-            if (key == "+") {
-                console.log(`You clicked the ${key}`)
+            // if (key == "+") {
+            //     console.log(`You clicked the ${key}`)
 
-            }
+            // }
         });
     }
 
@@ -39,17 +39,15 @@ function Calculator () {
     }
     this.add = function () {
 
-        return this.a + this.b;
     }
     this.subtract = function () {
-        return this.a - this.b;
+        
     }
     this.multiply = function () {
-        return this.a * this.b;
+        
     }
     this.divide = function () {
-        if (this.b == 0) throw new Error('div by 0 not allowed');
-        return this.a / this.b;
+        
     }
 }
 
