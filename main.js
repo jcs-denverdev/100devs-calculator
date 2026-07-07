@@ -38,6 +38,7 @@ function Calculator () {
         this.display.innerText += value;
     }
     this.add = function () {
+<<<<<<< HEAD
 
     }
     this.subtract = function () {
@@ -48,6 +49,18 @@ function Calculator () {
     }
     this.divide = function () {
         
+=======
+        
+    }
+    this.subtract = function () {
+
+    }
+    this.multiply = function () {
+
+    }
+    this.divide = function () {
+
+>>>>>>> 83359391f02a9a720d20388a934b7994b6ee3ded
     }
 }
 
