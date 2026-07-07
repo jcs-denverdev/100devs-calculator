@@ -20,11 +20,14 @@ function Calculator () {
         "/": document.getElementById('divide'),
         "=": document.getElementById('equals')
     }
+    this.display = document.getElementById('display_text');
+
     for (const key in this.buttons) {
         this.buttons[key].addEventListener('click', () => {
             this.read(key);
             if (key == "+") {
                 console.log(`You clicked the ${key}`)
+
             }
         });
     }
@@ -32,10 +35,10 @@ function Calculator () {
     this.read = function (value) {
         // console.log(value)
         /* take the button key (value), and append to the display */
-        document.getElementById('display_text').innerText += value;
+        this.display.innerText += value;
     }
-    this.add = function (val1, val2) {
-        document.getElementById('display_text').innerText += (val1 + val2)
+    this.add = function () {
+        
     }
     this.subtract = function () {
 
