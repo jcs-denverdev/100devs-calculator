@@ -20,31 +20,38 @@ function Calculator () {
         "/": document.getElementById('divide'),
         "=": document.getElementById('equals')
     }
+    this.display = document.getElementById('display_text');
+
     for (const key in this.buttons) {
         this.buttons[key].addEventListener('click', () => {
             this.read(key);
+            if (key == "+") {
+                console.log(`You clicked the ${key}`)
+
+            }
         });
     }
 
     this.read = function (value) {
         // console.log(value)
-        document.getElementById('display_text').innerText += value;
+        /* take the button key (value), and append to the display */
+        this.display.innerText += value;
     }
     this.add = function () {
-
+        
     }
     this.subtract = function () {
-        
+
     }
     this.multiply = function () {
-        
+
     }
     this.divide = function () {
-        
+
     }
 }
 
 
 let calculator = new Calculator(); // new object created
 
-// console.log(calculator.read());
+
