@@ -36,18 +36,7 @@ function Calculator () {
         /* take the button key (value), and append to the display */
         this.display.innerText += value;
     }
-    this.add = function () {
-        
-    }
-    this.subtract = function () {
-        
-    }
-    this.multiply = function () {
-        
-    }
-    this.divide = function () {
-        
-    }
+
     this.equals = function () {
         let expression = this.display.innerText.slice(0, -1); // remove the "=" 
         this.display.innerText = eval(expression);
